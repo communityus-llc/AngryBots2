@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 using Unity.Mathematics;
+using UnityEngine.Experimental.Rendering.LWRP;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.LWRP;
 
 namespace UnityEngine.Experimental.Rendering.LightweightPipeline
 {
@@ -234,8 +236,9 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
             
             UpdateReflectionCamera(camera);
 
-            CullResults cullResults = new CullResults();
-            LightweightRenderPipeline.RenderSingleCamera(pipelineInstance, context, m_ReflectionCamera, ref cullResults);
+            //IRendererSetup cullResults
+            //IRendererSetup cullResults = new IRendererSetup();
+            LightweightRenderPipeline.RenderSingleCamera(pipelineInstance, context, m_ReflectionCamera);// ref cullResults);
             
             GL.invertCulling = false;
             RenderSettings.fog = true;
