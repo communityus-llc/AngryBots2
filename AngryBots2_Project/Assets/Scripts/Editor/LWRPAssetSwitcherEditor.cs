@@ -1,12 +1,23 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
+//using UnityEngine.Experimental.UIElements;
 using UnityEditor.Experimental.UIElements;
-using UnityEngine.Experimental.UIElements.StyleEnums;
+//using UnityEngine.Experimental.UIElements.StyleEnums;
 using Object = UnityEngine.Object;
 using UnityEngine.Experimental.Rendering.LightweightPipeline;
+
+
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Rendering.LWRP;
+//using UnityEngine.Experimental.Rendering.LWRP;
+using UnityEngine.UIElements;
+using UnityEditor.Experimental.UIElements;
+
+
+//using UnityEngine.UIElements;
 
 public class LWRPAssetSwitcherEditor : EditorWindow
 {
@@ -23,7 +34,7 @@ public class LWRPAssetSwitcherEditor : EditorWindow
 
     public void OnEnable()
     {
-        var root = this.GetRootVisualContainer();
+        //var root = this.GetRootVisualContainer();
 
         var LWRPAssetInputs = new VisualElement()
         {
@@ -40,7 +51,7 @@ public class LWRPAssetSwitcherEditor : EditorWindow
                 
         });
 
-        LWRPAssetInputs.Add(new ObjectField()
+        LWRPAssetInputs.Add(new UnityEditor.UIElements.ObjectField()
         {
             objectType = typeof(LightweightRenderPipelineAsset),
             style = 
@@ -55,7 +66,9 @@ public class LWRPAssetSwitcherEditor : EditorWindow
 
         });
 
-        root.Add(LWRPAssetInputs);
+        m_VisualElementContainer.Add(LWRPAssetInputs);
+
+        //root.Add(LWRPAssetInputs);
               
     }
 
