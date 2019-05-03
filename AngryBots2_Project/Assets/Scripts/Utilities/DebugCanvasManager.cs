@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Experimental.Rendering.LightweightPipeline;
+using UnityEngine.Rendering.LWRP;
 
 public class DebugCanvasManager : MonoBehaviour
 {
