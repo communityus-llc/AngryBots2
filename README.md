@@ -1,7 +1,6 @@
 # Angry Bots 2
-
-![AB2_1.png](https://i.imgur.com/Hr8P5MV.jpg)
-
+//temp
+//this is where social promo goes it think
 **Description**
 
 Angry Bots 2 is an example Unity Project, developed by Unity Technologies, used to demonstrate several features:
