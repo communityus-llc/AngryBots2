@@ -1,5 +1,4 @@
 # Angry Bots 2
-//temp
 //this is where social promo goes it think
 **Description**
 
