@@ -17,8 +17,7 @@ This is a 'live' project; meaning that assets, feature-usage, code, etc will lik
 
 Feel free to use anything from this project for whatever you are working on; assets, code, shader graphs, etc!
 
-![AB2_2.png](https://i.imgur.com/kIJpf5S.jpg)
-
+//remove
 
 **Current Software Requirements**
 
